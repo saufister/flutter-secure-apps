@@ -1,0 +1,120 @@
+{
+    "users":
+    [
+        {
+            "id": 1,
+            "username": "John",
+            "password": 1234
+        },
+        {
+            "id": 2,
+            "username": "Jane",
+            "password": 5678
+        },
+        {
+            "id": 3,
+            "username": "Jim",
+            "password": 91011
+        },
+        {
+            "id": 4,
+            "username": "Jill",
+            "password": 121314
+        },  
+        {
+            "id": 5,
+            "username": "Jack",
+            "password": 151617
+        },
+        {
+            "id": 6,
+            "username": "Jenny",
+            "password": 181920
+        },
+        {
+            "id": 7,
+            "username": "Jesse",
+            "password": 212223
+        },
+        {
+            "id": 8,
+            "username": "Jasmine",
+            "password": 242526
+        },
+        {
+            "id": 9,
+            "username": "Jared",
+            "password": 272829
+        },
+        {
+            "id": 10,
+            "username": "Jocelyn",
+            "password": 303132
+        },
+        {
+            "id": 11,
+            "username": "Jasper",
+            "password": 333435
+        },
+        {
+            "id": 12,
+            "username": "Jenna",
+            "password": 363738
+        },
+        {
+            "id": 13,
+            "username": "Javier",
+            "password": 394041
+        },
+        {
+            "id": 14,
+            "username": "Jasmine",
+            "password": 424344
+        },
+        {
+            "id": 15,
+            "username": "Jared",
+            "password": 454647
+        },
+        {
+            "id": 16,
+            "username": "Jocelyn",
+            "password": 484950
+        },
+        {
+            "id": 17,
+            "username": "Jasper",
+            "password": 515253
+        },
+        {
+            "id": 18,
+            "username": "Jenna",
+            "password": 545556
+        },
+        {
+            "id": 19,
+            "username": "Javier",
+            "password": 575859
+        },
+        {
+            "id": 20,
+            "username": "Jasmine",
+            "password": 606162
+        },
+        {
+            "id": 21,
+            "username": "Jared",
+            "password": 636465
+        },
+        {
+            "id": 22,
+            "username": "Jocelyn",
+            "password": 666768
+        },
+        {
+            "id": 23,
+            "username": "Jasper",
+            "password": 697071
+        }
+    ]
+}
