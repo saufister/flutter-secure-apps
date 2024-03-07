@@ -45,6 +45,90 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
+  // Widget loginWidget() {
+  //   return ListView(
+  //     children: [
+  //       SizedBox(
+  //         height: 30,
+  //       ),
+  //       Padding(
+  //         padding: EdgeInsets.all(10),
+  //         child: Card(
+  //           child: Padding(
+  //             padding: EdgeInsets.all(20),
+  //             child: Column(
+  //               crossAxisAlignment: CrossAxisAlignment.center,
+  //               children: [
+  //                 Image.network(
+  //                   "https://media.licdn.com/dms/image/C510BAQGb3ol0oHDZtQ/company-logo_200_200/0/1630614516528/inixindojogja_logo?e=2147483647&v=beta&t=7EFy5JIOpRVg7cw1TCGuOMDGgsn-iNp4wjrF4t6OQVo",
+  //                   width: 100,
+  //                 ),
+  //                 Text(
+  //                   "LOGIN PAGE",
+  //                   style: Theme.of(context).textTheme.headlineLarge,
+  //                 ),
+  //                 Divider(),
+  //                 SizedBox(
+  //                   height: 30,
+  //                 ),
+  //                 Text(
+  //                   "Email Account :",
+  //                   style: Theme.of(context).textTheme.headlineSmall,
+  //                 ),
+  //                 Container(
+  //                   padding: EdgeInsets.all(10),
+  //                   decoration: BoxDecoration(
+  //                     color: Theme.of(context).colorScheme.inversePrimary,
+  //                     borderRadius: BorderRadius.all(Radius.circular(30)),
+  //                   ),
+  //                   child: TextFormField(
+  //                     decoration: InputDecoration(
+  //                         border: InputBorder.none,
+  //                         labelText: "email@yourdomain.com",
+  //                         hintText: "Isikan email Valid"),
+  //                   ),
+  //                 ),
+  //                 Text(
+  //                   "Password :",
+  //                   style: Theme.of(context).textTheme.headlineSmall,
+  //                 ),
+  //                 Container(
+  //                   padding: EdgeInsets.all(10),
+  //                   decoration: BoxDecoration(
+  //                     color: Theme.of(context).colorScheme.inversePrimary,
+  //                     borderRadius: BorderRadius.all(Radius.circular(30)),
+  //                   ),
+  //                   child: TextFormField(
+  //                     obscureText: tECPasswordVisible,
+  //                     decoration: InputDecoration(
+  //                         border: InputBorder.none,
+  //                         suffixIcon: IconButton(
+  //                           icon: tECPasswordVisible
+  //                               ? Icon(Icons.remove_red_eye)
+  //                               : Icon(Icons.panorama_fish_eye),
+  //                           onPressed: () {
+  //                             setState(() {
+  //                               tECPasswordVisible = !tECPasswordVisible;
+  //                             });
+  //                           },
+  //                         ),
+  //                         labelText: "valid passwod",
+  //                         hintText: "Isikan passwod anda"),
+  //                   ),
+  //                 ),
+  //                 ElevatedButton(
+  //                     onPressed: () {
+  //                       OnlineAuth();
+  //                     },
+  //                     child: Text("LOGIN"))
+  //               ],
+  //             ),
+  //           ),
+  //         ),
+  //       )
+  //     ],
+  //   );
+  // }
   Widget loginFormWidget() {
     return Container(
       decoration: const BoxDecoration(
@@ -103,11 +187,32 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   child: const Text("Login"),
                 ),
+                const SizedBox(height: 20),
+                ElevatedButton(
+                  onPressed: googleLogin,
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white,
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Icon(Icons.login), // This is the Google icon
+                      SizedBox(
+                          width:
+                              4), // This adds some spacing between the icon and the text
+                      Text("Login dengan Google"),
+                    ],
+                  ),
+                )
               ],
             ),
           ),
         ],
       ),
     );
+  }
+
+  void googleLogin() async {
+    debugPrint('google login dipanggil');
   }
 }
